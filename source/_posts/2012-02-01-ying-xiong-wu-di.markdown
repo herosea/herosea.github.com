@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "英雄无敌"
+title: "学习octopress"
 date: 2012-02-01 22:05
 comments: true
 categories: [Test, CSS3, html5, java]
@@ -11,7 +11,7 @@ categories: [Test, CSS3, html5, java]
 [Markdown-syntax](http://wowubuntu.com/markdown/#p "Markdown语法说明中文版")
 -----------
 你好，哈哈  
-我是周雄海！  
+我是！  
 
 <!-- more -->
 
