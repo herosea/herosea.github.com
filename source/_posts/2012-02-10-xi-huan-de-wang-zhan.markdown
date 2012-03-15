@@ -14,6 +14,7 @@ categories: 玩站，爱好，总结
 
 ##资讯类##
 [event.geekpark.net][]
+[www.v2ex.com][]
 
 ##工具类##
 [http://abloz.com/huzheng/stardict-dic/][]
@@ -26,4 +27,5 @@ categories: 玩站，爱好，总结
 [www.eclipse.org]: http://www.eclipse.org/
 [maven.apache.org]: http://maven.apache.org/
 [event.geekpark.net]: http://event.geekpark.net/
+[www.v2ex.com]: http://www.v2ex.com/ '分享思想的网站'
 [http://abloz.com/huzheng/stardict-dic/]: http://abloz.com/huzheng/stardict-dic/
