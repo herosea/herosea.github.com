@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>rubylearning.com阶段学完纪念 - 百川归海</title>
+  <meta name="author" content="周雄海">
+
+  
+  <meta name="description" content="终于看完了rubylearning上的学习教程了，纪念一下。 ruby的加、减、乘和除都是对象的方法。 变量的作用域可以根据名称来判定，$开头的全局变量，@开头的实例变量（成员变量），@@开头的类变量。
+内置的全局变量？
+本地域？ 获取输入 gets.chomp
+ruby的名称 名称有大小写、 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://HeroSea.github.com/blog/2012/02/15/rubylearning-dot-com-jie-duan-xue-wan-ji-nian">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="百川归海" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-30213540-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">百川归海</a></h1>
+  
+    <h2>2012-虎超龙骧</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss email">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+    <li><a href="herosea.zhou@gmail.com" rel="subscribe-email" title="subscribe via email">Email</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:HeroSea.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">rubylearning.com阶段学完纪念</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-15T21:38:00+08:00" pubdate data-updated="true">Feb 15<span>th</span>, 2012</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>终于看完了rubylearning上的学习教程了，纪念一下。</p>
+
+<p>ruby的加、减、乘和除都是对象的方法。</p>
+
+<p>变量的作用域可以根据名称来判定，$开头的全局变量，@开头的实例变量（成员变量），@@开头的类变量。<br/>
+内置的全局变量？<br/>
+本地域？</p>
+
+<p>获取输入 gets.chomp<br/>
+ruby的名称 名称有大小写、数字和下划线组成。？<br/>
+ruby的方法名规约是驼峰命名法。？<br/>
+方法的定义使用def&#8230;end，可以的方法后缀有 ！和？。！表明是破坏性方法，会改变消息接收着（ruby中调用方法被称作向对象发消息）。?表明方法是一个询问方法，通常会返回true或则false，但不是一定的，可以返回其他，比如<em>?.zero</em>。另外在ruby中除了false和nil之外都表示true（包括&#8221;和0）。</p>
+
+<p>ri?
+&#8216;string&#8217;.methods()
+比较字符串是否相等和java正好相反，使用 = 比较内容，使用equals?检查是不是同一个对象。<br/>
+%w可以把对象转换为数组？<br/>
+utf中英文字符占一个字节，使得和asicc码一样。？？
+ruby使用所在操作系统的编码
+encoding class的使用？ 可以在文件的第一行使用coding=utf-8标识文件使用utf-8编码，如果第一行是 !/bin/bash之类的，可以将标识放到第二行。<br/>
+?:和java一样
+nil是一个在ruby中表示nothing的对象。<br/>
+false和nil的不同是，false是一个?<br/>
+ruby的块(block)是一个优秀的语法，使用上他在方法所有的参数最后，使用{}或则 do&#8230;end包围，如 {|k, v| puts k + &#8216;:&#8217; + v}，闭包将会在接受消息的对象中调用，并且可以将参数传到闭包中。在定义方法时使用yeld？调用闭包。</p>
+
+<p>a, b, c = 1, 2, 3, 4 将会给a,b,c依次赋值。首先将1，2，3，4放到一个数组里面，然后赋值给左边的变量。<br/>
+ENV.each{|k,v|puts k + &#8217; : &#8221; + v}将环境变量打印出来。<br/>
+ARGS可以引用命令行参数。<br/>
+GetoptLong不是ruby的核心包？需要使用requre引入，是用来解析命令行的配置参数的。<br/>
+Range有两种..是闭区间, &#8230;不包含最大的数，如(0..9)表示0到9，（0&#8230;9）表示0到8。<br/>
+Symbol是一个符号，他总是指向同一个对象？？，在hash中使用的比较多。 :name。 方法和类是Symbol</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">周雄海</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-15T21:38:00+08:00" pubdate data-updated="true">Feb 15<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/ruby-study-zong-jie-xue-xi/'>ruby,study,总结,学习</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://HeroSea.github.com/blog/2012/02/15/rubylearning-dot-com-jie-duan-xue-wan-ji-nian/" data-via="" data-counturl="http://HeroSea.github.com/blog/2012/02/15/rubylearning-dot-com-jie-duan-xue-wan-ji-nian/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/02/11/ubuntuan-zhuang-ji-lu/" title="Previous Post: ubuntu安装记录">&laquo; ubuntu安装记录</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/02/21/qiao-bu-si/" title="Next Post: 乔布斯传-读后感">乔布斯传-读后感 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/12/09/ubuntuan-zhuang-ji-lu/">ubuntu安装记录</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/21/study-of-octopress/">Study of octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/21/install-vim-plugin-for-rails/">Install vim plugin for rails</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/02/21/qiao-bu-si/">乔布斯传-读后感</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/02/15/rubylearning-dot-com-jie-duan-xue-wan-ji-nian/">rubylearning.com阶段学完纪念</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - 周雄海 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'herosea';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://HeroSea.github.com/blog/2012/02/15/rubylearning-dot-com-jie-duan-xue-wan-ji-nian/';
+        var disqus_url = 'http://HeroSea.github.com/blog/2012/02/15/rubylearning-dot-com-jie-duan-xue-wan-ji-nian/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

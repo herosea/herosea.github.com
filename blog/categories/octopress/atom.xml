@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: octopress | 百川归海]]></title>
+  <link href="http://HeroSea.github.com/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://HeroSea.github.com/"/>
+  <updated>2013-03-24T19:37:48+08:00</updated>
+  <id>http://HeroSea.github.com/</id>
+  <author>
+    <name><![CDATA[周雄海]]></name>
+    <email><![CDATA[herosea.zhou@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Study of octopress]]></title>
+    <link href="http://HeroSea.github.com/blog/2012/03/21/study-of-octopress/"/>
+    <updated>2012-03-21T21:54:00+08:00</updated>
+    <id>http://HeroSea.github.com/blog/2012/03/21/study-of-octopress</id>
+    <content type="html"><![CDATA[<p>添加评论支持：打开<em>config.yml,查找disquz，添加disquz帐号
+添加Google Analytics支持：打开</em>config.yml,定位到最后，查找Google Analytics，输入申请帐号后给的id</p>
+]]></content>
+  </entry>
+  
+</feed>

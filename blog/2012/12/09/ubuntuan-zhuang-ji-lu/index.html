@@ -1,0 +1,454 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>ubuntu安装记录 - 百川归海</title>
+  <meta name="author" content="周雄海">
+
+  
+  <meta name="description" content="拷贝前一个系统用户下的文件，脚本配置，svn配置，maven配置到新系统 固态硬盘优化（机械硬盘可以参考） 安装profile-sync-daemon将浏览器临时文件放入缓存中
+修改fstab文件挂载参数
+/etc/rc.local 中 添加 echo /sys/block/sda/queue/ &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://HeroSea.github.com/blog/2012/12/09/ubuntuan-zhuang-ji-lu">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="百川归海" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-30213540-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">百川归海</a></h1>
+  
+    <h2>2012-虎超龙骧</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss email">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+    <li><a href="herosea.zhou@gmail.com" rel="subscribe-email" title="subscribe via email">Email</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:HeroSea.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Ubuntu安装记录</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-09T17:16:00+08:00" pubdate data-updated="true">Dec 9<span>th</span>, 2012</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>拷贝前一个系统用户下的文件，脚本配置，svn配置，maven配置到新系统</p>
+
+<h3>固态硬盘优化（机械硬盘可以参考）</h3>
+
+<ul>
+<li>安装<a href="http://ubuntuforums.org/showthread.php?t=1921800">profile-sync-daemon</a>将浏览器临时文件放入缓存中</li>
+<li>修改fstab文件挂载参数</li>
+<li>/etc/rc.local 中 添加 <code>echo /sys/block/sda/queue/scheduler</code>,优化固态硬盘</li>
+</ul>
+
+
+<h3>32位兼容包</h3>
+
+<pre><code>sudo apt-get install ia32-libs #32位兼容包
+</code></pre>
+
+<h3>安装wine（要使用vpn或者代理）</h3>
+
+<pre><code>sudo add-apt-repository ppa:ubuntu-wine/ppa
+sudo apt-get update
+sudo apt-get install wine1.5
+</code></pre>
+
+<h4>wine扩展</h4>
+
+<pre><code>sudo apt-get install wine-gecko1.8
+sudo apt-get install wine-mono0.0.8
+</code></pre>
+
+<h3>QQ</h3>
+
+<p>参考<a href="http://www.longene.org/forum/viewtopic.php?f=6&amp;t=4700">longene qq</a></p>
+
+<h3>新浪微薄</h3>
+
+<pre><code>sudo apt-get install gwibber-service-sina #新浪微博
+</code></pre>
+
+<h3>gim图像</h3>
+
+<pre><code>sudo apt-get install gimp
+</code></pre>
+
+<p>安装 digiKan 处理相机图片（处理单反相机的图片）</p>
+
+<h3>skype</h3>
+
+<p>参考<a href="https://help.ubuntu.com/community/Skype">https://help.ubuntu.com/community/Skype</a></p>
+
+<pre><code>sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+sudo apt-get update &amp;&amp;     sudo apt-get install skype
+</code></pre>
+
+<h3>安装虾米</h3>
+
+<p><a href="http://forum.ubuntu.org.cn/viewtopic.php?f=74&amp;t=380947">详细</a></p>
+
+<pre><code>sudo apt-add-repository ppa:timxx/xmradio
+sudo apt-get update
+sudo apt-get install xmradio
+</code></pre>
+
+<h3>安装kugoo</h3>
+
+<p><a href="http://forum.ubuntu.org.cn/viewtopic.php?f=73&amp;t=382232">详细</a></p>
+
+<h3>安装小企鹅输入法</h3>
+
+<pre><code>sudo apt-get remove ibus-* -y
+sudo apt-get  install  fcitx-pinyin  fcitx-table-wbpy im-switch -y
+sudo im-switch -s fcitx  -z default -y
+</code></pre>
+
+<h3>安装mac主题</h3>
+
+<p>参考<a href="http://blog.csdn.net/liuyanzhi08/article/details/7748903">Make ubuntu become Mac Lion</a></p>
+
+<pre><code>sudo add-apt-repository ppa:tualatrix/ppa -y
+sudo add-apt-repository ppa:noobslab/themes -y
+sudo apt-get update
+sudo apt-get install mac-os-lion-cursors mac-os-lion-icons mac-os-lion-theme ubuntu-tweak cairo-dock -y
+</code></pre>
+
+<p>使用ubuntu-tweak添加软件源</p>
+
+<h3>右键打开命令行</h3>
+
+<pre><code>sudo apt-get install nautilus-open-terminal #右键打开命令行
+</code></pre>
+
+<p>将自建脚本放入bin目录中并加入.bashrc文件中 PATH=$PATH:~/bin</p>
+
+<h3>安装jdk</h3>
+
+<pre><code>sudo apt-get install openjdk-6-jdk openjdk-6-source openjdk-6-doc -y
+</code></pre>
+
+<h3>安装mysql和mysql工具</h3>
+
+<pre><code>sudo apt-get install mysql-server -y
+sudo apt-get install mysql-workbench -y
+</code></pre>
+
+<p>安装受限程序、安装filezila、添加chrome源，安装chrome。
+导入switch sharp 配置。</p>
+
+<h3>安装svn</h3>
+
+<p>eclipse中使用的是1.7版本，ubuntu的比较旧，需要使用额外的源。</p>
+
+<pre><code>sudo apt-add-repository ppa:dominik-stadler/subversion-1.7 -y
+sudo apt-get update -y
+sudo apt-get install libsvn-java -y
+sudo apt-get install subversion -y
+</code></pre>
+
+<p>下载eclipse，安装maven，svn插件</p>
+
+<h3>安装maven、vim、graphicsmagick（图片压缩）、memcached和git</h3>
+
+<pre><code>sudo apt-get install maven -y
+sudo apt-get install git -y
+sudo apt-get install vim
+sudo apt-get install memcached
+sudo apt-get install graphicsmagick
+</code></pre>
+
+<h3>路由跟踪</h3>
+
+<pre><code>sudo apt-get install traceroute #路由跟踪
+</code></pre>
+
+<h3>ssh自动交互（可用于本地shell自动交互）</h3>
+
+<pre><code>sudo apt-get install expect #ssh交互自动输入密码
+sudo apt-get install autossh #可带密码的ssh链接，并会自动重连
+</code></pre>
+
+<h3>dnsmasq本地dns优化</h3>
+
+<p><a href="http://www.snowhawkyrf.name/2012/05/ubuntu-1204dnsmasqdnsmasq.html">参考</a></p>
+
+<h4>假如你想要使用自己的dnsmasq配置</h4>
+
+<ul>
+<li>请先注释掉：<code>sudo vi /etc/NetworkManager/NetworkManager.conf</code>里面的<code>dns=dnsmasq</code></li>
+<li>然后重启NM：<code>sudo restart network-manager</code></li>
+<li>之后重启你事先设置好的dnsmasq，你的配置将生效
+
+<pre><code>sudo apt-get install dnsmasq
+sudo service dnsmasq restart
+</code></pre></li>
+<li>可以用dig google.com测试，如果SERVER是127.0.0.1即可
+
+<h4>自己的dns配置</h4>
+
+修改<em>/etc/dnsmasq.conf</em>添加如下
+
+<pre><code>address '/s.nexttv.com.tw/203.69.138.24'
+address '/api.tcloudapp.cn/101.68.210.11'
+address '/web.tcloudapp.cn/101.68.210.11'
+server '/google.com/8.8.8.8'
+server '/appspot.com/8.8.8.8'
+server '/facebook.com/8.8.8.8'
+server '/fbcdn.net/8.8.8.8'
+server '/twitter.com/8.8.8.8'
+server '/youtube.com/8.8.8.8'
+server '/ytimg.com/8.8.8.8'
+server '/imageshack.us/8.8.8.8'
+server '/books.com.tw/8.8.8.8'
+server '/book.com.tw/8.8.8.8'
+server '/nownews.com/8.8.8.8'
+server '/gov.tw/8.8.8.8'
+server '/google.com.hk/8.8.8.8'
+server '/vimeo.com/8.8.8.8'
+server '/fbsbx.com/8.8.8.8'
+server '/boxun.com/8.8.8.8'
+server '/appengine.google.com/221.12.1.227'
+</code></pre></li>
+</ul>
+
+
+<h3>Nexus7</h3>
+
+<ul>
+<li><code>sudo apt-get install libmtp-dev</code></li>
+<li><a href="http://bernaerts.dyndns.org/linux/247-ubuntu-automount-nexus7-mtp">AUTOMOUNT NEXUS 7 IN MTP MODE</a></li>
+<li><a href="http://bernaerts.dyndns.org/android/246-ubuntu-root-nexus-7-tablet">Root nexus 7 with ubuntu linux（测试未成功）</a>
+
+<h3>ruby</h3>
+
+参考<a href="http://ruby-china.org/wiki/install_ruby_guide">ruby-china的wiki</a>
+
+<h4>octopress（个人日志）</h4>
+
+<p><code>git remote add octopress https://github.com/imathis/octopress.git</code> #不能找到octopress仓库时执行</p></li>
+</ul>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">周雄海</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-09T17:16:00+08:00" pubdate data-updated="true">Dec 9<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/study/'>study</a>, <a class='category' href='/blog/categories/ubuntu/'>ubuntu</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://HeroSea.github.com/blog/2012/12/09/ubuntuan-zhuang-ji-lu/" data-via="" data-counturl="http://HeroSea.github.com/blog/2012/12/09/ubuntuan-zhuang-ji-lu/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/03/21/study-of-octopress/" title="Previous Post: Study of octopress">&laquo; Study of octopress</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/12/09/ubuntuan-zhuang-ji-lu/">ubuntu安装记录</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/21/study-of-octopress/">Study of octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/21/install-vim-plugin-for-rails/">Install vim plugin for rails</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/02/21/qiao-bu-si/">乔布斯传-读后感</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/02/15/rubylearning-dot-com-jie-duan-xue-wan-ji-nian/">rubylearning.com阶段学完纪念</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - 周雄海 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'herosea';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://HeroSea.github.com/blog/2012/12/09/ubuntuan-zhuang-ji-lu/';
+        var disqus_url = 'http://HeroSea.github.com/blog/2012/12/09/ubuntuan-zhuang-ji-lu/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://HeroSea.github.com/sitemap.xml 

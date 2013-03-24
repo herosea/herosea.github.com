@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: vim | 百川归海]]></title>
+  <link href="http://HeroSea.github.com/blog/categories/vim/atom.xml" rel="self"/>
+  <link href="http://HeroSea.github.com/"/>
+  <updated>2013-03-24T19:37:48+08:00</updated>
+  <id>http://HeroSea.github.com/</id>
+  <author>
+    <name><![CDATA[周雄海]]></name>
+    <email><![CDATA[herosea.zhou@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Install vim plugin for rails]]></title>
+    <link href="http://HeroSea.github.com/blog/2012/03/21/install-vim-plugin-for-rails/"/>
+    <updated>2012-03-21T21:17:00+08:00</updated>
+    <id>http://HeroSea.github.com/blog/2012/03/21/install-vim-plugin-for-rails</id>
+    <content type="html"><![CDATA[<p>First install vim-pathogen. Vim-pathogen is a plugin for vim like the rvm for ruby. The url for Vim-pathogen is <a href="https://github.com/tpope/vim-pathogen">https://github.com/tpope/vim-pathogen</a>.</p>
+
+<p>Second install vim-rails. The url is <a href="https://github.com/tpope/vim-rails">https://github.com/tpope/vim-rails</a>.</p>
+
+<p>The last install nerdtree. The url is <a href="https://github.com/scrooloose/nerdtree">https://github.com/scrooloose/nerdtree</a></p>
+]]></content>
+  </entry>
+  
+</feed>

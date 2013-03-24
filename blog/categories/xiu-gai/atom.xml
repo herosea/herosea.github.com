@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 修改 | 百川归海]]></title>
+  <link href="http://HeroSea.github.com/blog/categories/xiu-gai/atom.xml" rel="self"/>
+  <link href="http://HeroSea.github.com/"/>
+  <updated>2013-03-24T19:37:48+08:00</updated>
+  <id>http://HeroSea.github.com/</id>
+  <author>
+    <name><![CDATA[周雄海]]></name>
+    <email><![CDATA[herosea.zhou@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[ubuntu安装记录]]></title>
+    <link href="http://HeroSea.github.com/blog/2012/02/11/ubuntuan-zhuang-ji-lu/"/>
+    <updated>2012-02-11T12:21:00+08:00</updated>
+    <id>http://HeroSea.github.com/blog/2012/02/11/ubuntuan-zhuang-ji-lu</id>
+    <content type="html"><![CDATA[<ol>
+<li>修改源为ubuntu.srt.cn/ubuntu</li>
+<li>完善语言支持</li>
+<li>更新系统</li>
+<li>安装firefox插件</li>
+<li><a href="http://grandsea.iteye.com/blog/1346613">安装ruby</a></li>
+<li>sudo apt-get install vim #安装完整vim</li>
+<li><a href="http://grandsea.iteye.com/blog/1381268">安装goagent</a></li>
+<li><a href="http://sapling.me/unixlinux/dnsmasq.html">使用dns缓存</a></li>
+<li>安装bumblebee https://launchpad.net/~bumblebee/+archive/stable 支持双显卡</li>
+<li>添加一个专门用来安装程序的用户 useradd install &amp;&amp; sudo usermod -a -G admin install &amp;&amp; sudo usermod -a -G sudo</li>
+<li>安装<a href="http://www.yun.io">云诺</a></li>
+<li>安装mldonkey http://www.verycd.com/groups/linuxleague/736844.topic http://forum.ubuntu.org.cn/viewtopic.php?t=42337&amp;highlight=mldonkey</li>
+<li>安装virualboxh和其增强插件，虚拟机安装xp</li>
+<li>安装goldendict和词典</li>
+<li>为支持4G内存，安装pae模块</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>
